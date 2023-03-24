@@ -38,6 +38,16 @@ To use the website, follow these steps:
 
 Contributions to this project are welcome. If you find any bugs or have suggestions for new features, please open an issue or submit a pull request.
 
+## Current contributors:
+<br>
+ <a href="https://github.com/Sankar-2006/Mailtrix/graphs/contributors">
+   <img src="https://contributors-img.web.app/image?repo=Sankar-2006/Mailtrix" />
+</a>
+
+## Authors:
+- [Sankar-2006](https://github.com/Sankar-2006) Frontend
+- [Krishpranav](https://github.com/krishpranav) Backend
+
 ## License
 
 This project is licensed under the MIT License. See the LICENSE file for details.
