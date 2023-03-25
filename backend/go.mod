@@ -11,6 +11,7 @@ require (
 	github.com/klauspost/compress v1.16.3
 	github.com/leporo/sqlf v1.3.0
 	github.com/mattn/go-shellwords v1.0.12
+	github.com/mhale/smtpd v0.8.0
 	github.com/satori/go.uuid v1.2.0
 	github.com/sirupsen/logrus v1.9.0
 	github.com/tg123/go-htpasswd v1.2.1

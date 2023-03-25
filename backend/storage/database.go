@@ -1,3 +1,7 @@
+// Copyright 2023 Krisna Pranav, Sankar-2006. All rights reserved.
+// Use of this source code is governed by a Apache-2.0 License
+// license that can be found in the LICENSE file
+
 package storage
 
 import (
@@ -93,7 +97,7 @@ func InitDB() error {
 	if p == "" {
 		// when no path is provided then we create a temporary file
 		// which will get deleted on Close(), SIGINT or SIGTERM
-		p = fmt.Sprintf("%s-%d.db", path.Join(os.TempDir(), "mailpit"), time.Now().UnixNano())
+		p = fmt.Sprintf("%s-%d.db", path.Join(os.TempDir(), "mailtrix"), time.Now().UnixNano())
 		dbIsTemp = true
 		logger.Log().Debugf("[db] using temporary database: %s", p)
 	} else {
