@@ -11,7 +11,7 @@ import (
 	"strings"
 
 	"github.com/krishpranav/Mailtrix/config"
-	// "github.com/krishpranav/Mailtrix/server"
+	"github.com/krishpranav/Mailtrix/server"
 	"github.com/krishpranav/Mailtrix/server/smtpd"
 	"github.com/krishpranav/Mailtrix/storage"
 	"github.com/krishpranav/Mailtrix/utils/logger"
