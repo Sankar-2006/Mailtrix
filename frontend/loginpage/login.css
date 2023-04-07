@@ -13,6 +13,7 @@
 
 body {
     height: 100vh;
+    width: 100vw;
     background-color: #fff;
     display: flex;
     align-items: center;
@@ -22,74 +23,114 @@ body {
 }
 
 img {
-    height: 160px;
-    width: 160px;
-    position: absolute;
-    top: 8%;
+    width: 100px;
+    user-select: none;
 }
 
 section {
     text-align: center;
 }
 
-section h2 {
-    margin: 20px;
-    padding: 10px;
-    text-transform: uppercase;
-    user-select: none;
-    transform: translateY(45%);
+form {
+    width: 360px;
 }
 
-form {
-    transform: translateY(25px);
+section form h2 {
+    margin: 15px 0 0 0;
+    font-size: 2rem;
+    text-transform: uppercase;
+    user-select: none;
 }
 
 form .inptCont {
     display: flex;
     flex-direction: column;
-    text-align: left;
-    padding: 10px;
-    margin: 10px;
+    padding: 5px 0;
+    position: relative;
+    border-bottom: 2px solid #b1b1b1;
+    margin: 30px 0 0 0;
+    transition: .3s ease-in-out;
 }
 
-form .inptCont label {
-    /* user-select: none; */
-    color: #222;
-    transition: .2s ease-in-out;
-    font-weight: 600;
-    /* transform: translateY(25px); */
-}
-
-form .inptCont input {
-    outline: none;
-    border: none;
-    background-color: none;
-    padding: 5px;
-    cursor: text;
-    font-family: 'poppins', sans-serif;
-    border-bottom: 2px solid #555;
-    transition: .2s ease-in-out;
-}
-
-form .inptCont input:focus {
+.inptCont.focus {
     border-bottom-color: var(--mainColor);
 }
 
-/* 
-form .inptCont input:focus label {
-    transform: translateY(-25px);
-}  */
+.inptCont i {
+    color: #b1b1b1;
+    text-align: left;
+    position: absolute;
+    top: 5px;
+    margin: 5px;
+    transition: .3s ease-in-out;
+}
 
-form button[type="submit"] {
-    height: 30px;
-    width: 90px;
+.inptCont.focus i {
+    color: var(--mainColor);
+}
+
+.inptCont label {
+    position: absolute;
+    left: 35px;
+    user-select: none;
+    color: #999;
+    font-size: 18px;
+    cursor: text;
+    transition: .3s ease-in-out;
+}
+
+.inptCont.focus label {
+    top: -25px;
+    color: var(--mainColor);
+}
+
+.inptCont div input {
+    width: 300px;
+    outline: none;
+    background: none;
+    border: none;
+    margin-left: 15px;
+    color: var(--mainColor);
+}
+
+form p {
+    text-align: left;
+    font-size: 15px;
+    user-select: none;
+    color: red;
+}
+
+form a {
+    display: block;
+    margin: 10px 0 0 0;
+    text-align: right;
+    text-decoration: none;
+    color: #999;
+    transition: .2s;
+    user-select: none
+}
+
+a:hover {
+    color: var(--mainColor);
+}
+
+form button {
+    display: block;
+    width: 90%;
+    height: 40px;
+    border-radius: 20px;
     outline: none;
     border: none;
-    border-radius: 45px;
-    background-color: var(--mainColor);
-    font-weight: 600;
+    margin-top: 10px;
     cursor: pointer;
-    letter-spacing: .1px;
     text-transform: uppercase;
-    transform: translateY(50%);
+    font-size: 1.1rem;
+    background-image: linear-gradient(to right, var(--mainColor), rgb(180, 105, 255), var(--mainColor));
+    background-size: 150%;
+    user-select: none;
+    transition: .3s ease-in-out;
+}
+
+form button:hover {
+    background-position: right;
 }
