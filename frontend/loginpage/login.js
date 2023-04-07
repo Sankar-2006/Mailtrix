@@ -26,8 +26,6 @@ inputs.forEach(input => {
 
 /******************* ---VALIDATION--- ******************* */
 
-
-
 function checkEmptyFun() {
     if (mailInput.value === "") {
         errmsgMail.innerHTML = "Email cannot be Empty";
@@ -36,7 +34,11 @@ function checkEmptyFun() {
         mailIcon.style.color = "red";
         mailIcon.style.transition = "none";
         // mailLabel.style.color = "red"
+
     } else {
+        errmsgMail.innerHTML = "";
+        mailIcon.style.color = "var(--mainColor)"
+        mailIcon.style.transition = ".3s ease-in-out";
         checkCrtFormFun();
     }
 
@@ -48,13 +50,17 @@ function checkEmptyFun() {
         keyIcon.style.transition = "none";
         // passLabel.style.color = "red"
     } else {
+        errmsgPass.innerHTML = "";
+        keyIcon.style.color = "var(--mainColor)";
+        keyIcon.style.transition = ".3s ease-in-out";
         checkCrtFormFun();
+
     }
 }
 
 function checkCrtFormFun() {
 
-    let isCrtMail = '';
+    let isCrtMail = true;
     let isCrtPass = true;
 
     if (isCrtMail != true) {
@@ -74,6 +80,8 @@ function checkCrtFormFun() {
         keyIcon.style.transition = "none";
         // passLabel.style.color = "red"
     }
+
+
 }
 
 button.addEventListener('click', (e) => {
