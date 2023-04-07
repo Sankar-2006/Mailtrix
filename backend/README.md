@@ -11,7 +11,7 @@
 - building mailtrix backend from source:
 
 ### requirements:
-- NodeJS
+- Go 1.18
 - macOS/Linux/Windows
 - Minimum 2GB Ram with 100gb Storage.
 
@@ -19,8 +19,8 @@
 ```
 $ git clone https://github.com/Sankar-2006/Mailtrix
 $ cd Mailtrix/backend
-$ yarn install
-$ yarn run start
+$ go mod tidy
+$ go build
 ```
 
 ## Api Documentation:
