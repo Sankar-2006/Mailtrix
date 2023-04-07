@@ -7,3 +7,7 @@
  
 #builded binary
 Mailtrix
+
+# node installed libraries
+node_modules/
+
