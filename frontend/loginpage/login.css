@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+:root {
+    --mainColor: rgb(156, 64, 249);
+}
+
+body {
+    height: 100vh;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+
+img {
+    height: 160px;
+    width: 160px;
+    position: absolute;
+    top: 8%;
+}
+
+section {
+    text-align: center;
+}
+
+section h2 {
+    margin: 20px;
+    padding: 10px;
+    text-transform: uppercase;
+    user-select: none;
+    transform: translateY(45%);
+}
+
+form {
+    transform: translateY(25px);
+}
+
+form .inptCont {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 10px;
+    margin: 10px;
+}
+
+form .inptCont label {
+    /* user-select: none; */
+    color: #222;
+    transition: .2s ease-in-out;
+    font-weight: 600;
+    /* transform: translateY(25px); */
+}
+
+form .inptCont input {
+    outline: none;
+    border: none;
+    background-color: none;
+    padding: 5px;
+    cursor: text;
+    font-family: 'poppins', sans-serif;
+    border-bottom: 2px solid #555;
+    transition: .2s ease-in-out;
+}
+
+form .inptCont input:focus {
+    border-bottom-color: var(--mainColor);
+}
+
+/* 
+form .inptCont input:focus label {
+    transform: translateY(-25px);
+}  */
+
+form button[type="submit"] {
+    height: 30px;
+    width: 90px;
+    outline: none;
+    border: none;
+    border-radius: 45px;
+    background-color: var(--mainColor);
+    font-weight: 600;
+    cursor: pointer;
+    letter-spacing: .1px;
+    text-transform: uppercase;
+    transform: translateY(50%);
+}
