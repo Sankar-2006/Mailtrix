@@ -2,20 +2,34 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mailtrix</title>
-    <link rel="stylesheet" href="inbox.css">
+    <link rel="stylesheet" href="inbox.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 </head>
 
 <body>
     <header>
-        <div id="logo"><a href="#">Mailtrix</a></div>
-        <input type="search" id="searchInpt">
-        <span></span>
-        </div>
+        <nav>
+            <h2 id="logo"><a href="#">Mailtrix</a></h2>
+            <div class="searchBar">
+                <i class="fa-light fa-search"></i>
+                <input type="search" id="searchInpt" placeholder="Search" />
+            </div>
+            <i class="fa-light fa-ellipsis-vertical fa-xl"></i>
+        </nav>
     </header>
+
+    <main>
+        <aside>
+            <button><i class="fa-light fa-inbox"></i> Inbox</button>
+            <button><i class="fa-light fa-file"></i> Draft</button>
+            <button><i class="fa-light fa-paper-plane-top"></i> Sent</button>
+            <button><i class="fa-light fa-trash"></i> Deleted</button>
+        </aside>
+    </main>
 
     <script src="inbox.js"></script>
 </body>

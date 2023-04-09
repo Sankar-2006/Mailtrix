@@ -9,91 +9,55 @@
 
 :root {
     --mainColor: rgb(156, 64, 249);
-    --secondaryColor: #ca40f9;
 }
 
-/* 
 body {
-    background-image: linear-gradient(to right, var(--mainColor), var(--secondaryColor));
-} */
+    overflow: hidden;
+}
 
 header {
-    height: 50px;
+    width: 100%;
+    background-color: var(--mainColor);
+    padding: 10px 0;
+}
+
+nav {
+    width: 90%;
+    margin: 0 auto;
     display: flex;
+    align-items: center;
     justify-content: space-between;
-    border-bottom: 2px solid #ccc;
-    position: relative;
 }
 
-header #logo {
-    text-transform: uppercase;
-    letter-spacing: 10px;
-    margin: 15px 0 15px 30px;
-    font-weight: 600
-}
-
-header #logo a {
+nav h2 a{
     text-decoration: none;
-    color: var(--mainColor);
+    color: #000;
+    text-transform: uppercase;
 }
 
-header #searchInpt {
-    height: 40px;
-    width: 60%;
-    border-radius: 20px;
-    border: 2px solid #ccc;
-    position: absolute;
-    top: 5px;
-    right: 20%;
-    bottom: 5px;
+nav .searchBar {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 0.6rem 1rem;
+}
+
+.searchBar i {
+    position: relative;
+    left: 1px;
+}
+
+.searchBar input[type = "search"] {
+    border: none;
     outline: none;
-    padding: 10px;
-    /* background-image: linear-gradient(to right, var(--mainColor), var(--secondaryColor)); */
+    background: transparent;
+    width: 50vw;
+    margin-left: 1rem;
+    font-size: 0.9rem;
+    color: #555;
+    
 }
 
-header #burgerMenu {
-    cursor: pointer;
-    background: #000;
-    display: block;
-}
-
-header span {
-    height: 3px;
-    width: 30px;
-    background: var(--mainColor);
-    display: inline-block;
-    position: absolute;
-    right: 5%;
-    top: 50%;
-    border-radius: 1.5px;
-    cursor: pointer;
-    transition: .2s ease-in-out;
-}
-
-header span::after {
-    content: '';
-    height: 3px;
-    width: 30px;
-    background: var(--mainColor);
-    position: absolute;
-    top: -8px;
-    transition: .2s ease-in-out;
-}
-
-header span::before {
-    content: '';
-    height: 3px;
-    width: 30px;
-    background: var(--mainColor);
-    position: absolute;
-    top: 8px;
-    transition: .2s ease-in-out;
-}
-
-/* header span:hover {
-    opacity: 0;
-} */
-
-header span:hover ::before {
-    transform: rotateX(50deg);
+nav i {
+    position: relative;
+    right: -20px;
 }
