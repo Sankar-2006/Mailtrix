@@ -15,20 +15,67 @@
         <nav>
             <h2 id="logo"><a href="#">Mailtrix</a></h2>
             <div class="searchBar">
-                <i class="fa-light fa-search"></i>
+                <label for="searchInpt">
+                    <i class="fa-solid fa-search"></i>
+                </label>
                 <input type="search" id="searchInpt" placeholder="Search" />
             </div>
-            <i class="fa-light fa-ellipsis-vertical fa-xl"></i>
+            <button class="composeBtn"><i class="fa-solid fa-pencil fa-lg"></i> &ThickSpace; Compose</button>
+            <i class="fa-solid fa-ellipsis-vertical fa-xl"></i>
         </nav>
     </header>
 
     <main>
         <aside>
-            <button><i class="fa-light fa-inbox"></i> Inbox</button>
-            <button><i class="fa-light fa-file"></i> Draft</button>
-            <button><i class="fa-light fa-paper-plane-top"></i> Sent</button>
-            <button><i class="fa-light fa-trash"></i> Deleted</button>
+            <div data-for-tab="1" class="asideBtn asideBtnActive">
+                <i class="fa-solid fa-inbox"></i>
+                <button class="buttonAsi">Inbox</button>
+            </div>
+            <div class="asideBtn" data-for-tab="2">
+                <i class="fa-solid fa-file"></i>
+                <button class="buttonAsi">Draft</button>
+            </div>
+            <div class="asideBtn" data-for-tab="3">
+                <i class="fa-solid fa-envelope-circle-check"></i>
+                <button class="buttonAsi">Sent</button>
+            </div>
+            <div class="asideBtn" data-for-tab="4">
+                <i class="fa-solid fa-trash"></i>
+                <button class="buttonAsi">Deleted</button>
+            </div>
+
         </aside>
+
+        <section class="sectionContainer">
+            <section class=" section inboxSection activesec" data-tab="1">
+                <section class="mailBox">HI1</section>
+                <section class="mailBox">HI2</section>
+                <section class="mailBox">HI3</section>
+                <section class="mailBox">HI4</section>
+                <section class="mailBox">HI5</section>
+                <section class="mailBox">HI6</section>
+                <section class="mailBox">HI7</section>
+                <section class="mailBox">HI8</section>
+                <section class="mailBox">HI9</section>
+                <section class="mailBox">HI10</section>
+                <section class="mailBox">HI11</section>
+                <section class="mailBox">HI12</section>
+                <section class="mailBox">HI13</section>
+                <section class="mailBox">HI14</section>
+                <section class="mailBox">HI15</section>
+                <section class="mailBox">HI16</section>
+            </section>
+            <section class="section draftSection" data-tab="2">
+                <h1>Draft</h1>
+            </section>
+            <section class="section sentSection" data-tab="3">
+                <h1>Sent</h1>
+            </section>
+            <section class="section deletedSection" data-tab="4">
+                <h1>Deleted</h1>
+            </section>
+        </section>
+
     </main>
 
     <script src="inbox.js"></script>
